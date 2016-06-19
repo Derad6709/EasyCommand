@@ -1,0 +1,26 @@
+name: vk.com/lacky_craft
+main: krendell\krendell\krendell
+version: 1.0
+api: [1.6.0]
+author: krendell
+
+commands:
+ easycommand:
+  permission: debe.easycommand.cmd
+  description: §6Изменяем команды
+  usage: §a/easycommand <Add - добавить|Del - удалить|Reset - сбросить все настроенные комманды|List - все команды>
+default: op
+
+permissions:
+ debe:
+  default: op
+  description: Нихуя)
+  children:
+   debe.easycommand:
+    description: Пермишен Основной
+    children:
+      debe.easycommand.cmd:
+       description: Пермишен команды
+      debe.easycommand.use:
+       default: true
+       description: Пермишен использования
